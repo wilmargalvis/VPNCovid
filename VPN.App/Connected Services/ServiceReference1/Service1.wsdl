@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_IServiceTest_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://pruebassoul.magnum.com.co/PracticaWCF/ServiceTest.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://pruebassoul.magnum.com.co/PracticaWCF/ServiceTest.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://pruebassoul.magnum.com.co/PracticaWCF/ServiceTest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LRP.CapacitacionServiciosWCF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceTest_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_testRetunString_InputMessage">
+    <wsdl:part name="parameters" element="tns:testRetunString" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_testRetunString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testRetunStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_testObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:testObject" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_testObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_testReturnInt_InputMessage">
+    <wsdl:part name="parameters" element="tns:testReturnInt" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTest_testReturnInt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testReturnIntResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceTest">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTest/GetData" message="tns:IServiceTest_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTest/GetDataResponse" message="tns:IServiceTest_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="testRetunString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTest/testRetunString" message="tns:IServiceTest_testRetunString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTest/testRetunStringResponse" message="tns:IServiceTest_testRetunString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="testObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTest/testObject" message="tns:IServiceTest_testObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTest/testObjectResponse" message="tns:IServiceTest_testObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="testReturnInt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTest/testReturnInt" message="tns:IServiceTest_testReturnInt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTest/testReturnIntResponse" message="tns:IServiceTest_testReturnInt_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceTest" type="tns:IServiceTest">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testRetunString">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/testRetunString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testObject">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/testObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testReturnInt">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/testReturnInt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_IServiceTest" type="tns:IServiceTest">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_IServiceTest_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testRetunString">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/testRetunString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testObject">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/testObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testReturnInt">
+      <soap:operation soapAction="http://tempuri.org/IServiceTest/testReturnInt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IServiceTest" binding="tns:BasicHttpBinding_IServiceTest">
+      <soap:address location="http://pruebassoul.magnum.com.co/PracticaWCF/ServiceTest.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_IServiceTest" binding="tns:BasicHttpsBinding_IServiceTest">
+      <soap:address location="https://srvsoulpruebas.magnumgroup.local/PracticaWCF/ServiceTest.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

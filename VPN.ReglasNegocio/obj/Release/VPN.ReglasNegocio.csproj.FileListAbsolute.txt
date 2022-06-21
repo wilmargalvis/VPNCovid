@@ -1,0 +1,15 @@
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.ReglasNegocio.dll.config
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.ReglasNegocio.dll
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.ReglasNegocio.pdb
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.DatosNegocio.dll
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.EntidadesNegocio.dll
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.DatosNegocio.pdb
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.DatosNegocio.dll.config
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\bin\Release\VPN.EntidadesNegocio.pdb
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\obj\Release\VPN.ReglasNegocio.csprojAssemblyReference.cache
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\obj\Release\VPN.ReglasNegocio.csproj.CoreCompileInputs.cache
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\obj\Release\VPN.ReglasNegocio.csproj.CopyComplete
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\obj\Release\VPN.ReglasNegocio.dll
+C:\Proyectos\Iglesia\VPN.ReglasNegocio\obj\Release\VPN.ReglasNegocio.pdb

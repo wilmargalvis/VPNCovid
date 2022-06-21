@@ -1,0 +1,13 @@
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\VPN.Tecnologias.dll
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\VPN.Tecnologias.pdb
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\ephtmltopdf.dll
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\epengine.dll
+C:\Proyectos\Iglesia\VPN.Tecnologias\obj\Debug\VPN.Tecnologias.csproj.CoreCompileInputs.cache
+C:\Proyectos\Iglesia\VPN.Tecnologias\obj\Debug\VPN.Tecnologias.csproj.CopyComplete
+C:\Proyectos\Iglesia\VPN.Tecnologias\obj\Debug\VPN.Tecnologias.dll
+C:\Proyectos\Iglesia\VPN.Tecnologias\obj\Debug\VPN.Tecnologias.pdb
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\EPPlusFree.dll
+C:\Proyectos\Iglesia\VPN.Tecnologias\bin\Debug\EPPlusFree.xml
+C:\Proyectos\Iglesia\VPN.Tecnologias\obj\Debug\VPN.Tecnologias.csproj.AssemblyReference.cache

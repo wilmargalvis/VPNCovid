@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VPN.Web", "VPN.App\VPN.Web.csproj", "{8C094E4A-E73F-4C9A-AE0A-F8AE133F4C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VPN.EntidadesNegocio", "VPN.EntidadesNegocio\VPN.EntidadesNegocio.csproj", "{E159F860-26C5-4123-AEBB-3126FA12A226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VPN.ReglasNegocio", "VPN.ReglasNegocio\VPN.ReglasNegocio.csproj", "{0C16DC63-25B4-4BCF-A929-45919239A308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VPN.DatosNegocio", "VPN.DatosNegocio\VPN.DatosNegocio.csproj", "{671775D7-88FE-4C8C-8C12-802311310D82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VPN.Tecnologias", "VPN.Tecnologias\VPN.Tecnologias.csproj", "{C7DC52F6-BE39-40F4-912D-3FE0C87296F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C094E4A-E73F-4C9A-AE0A-F8AE133F4C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C094E4A-E73F-4C9A-AE0A-F8AE133F4C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C094E4A-E73F-4C9A-AE0A-F8AE133F4C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C094E4A-E73F-4C9A-AE0A-F8AE133F4C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E159F860-26C5-4123-AEBB-3126FA12A226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E159F860-26C5-4123-AEBB-3126FA12A226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E159F860-26C5-4123-AEBB-3126FA12A226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E159F860-26C5-4123-AEBB-3126FA12A226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C16DC63-25B4-4BCF-A929-45919239A308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C16DC63-25B4-4BCF-A929-45919239A308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C16DC63-25B4-4BCF-A929-45919239A308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C16DC63-25B4-4BCF-A929-45919239A308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671775D7-88FE-4C8C-8C12-802311310D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671775D7-88FE-4C8C-8C12-802311310D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671775D7-88FE-4C8C-8C12-802311310D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671775D7-88FE-4C8C-8C12-802311310D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DC52F6-BE39-40F4-912D-3FE0C87296F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DC52F6-BE39-40F4-912D-3FE0C87296F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DC52F6-BE39-40F4-912D-3FE0C87296F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DC52F6-BE39-40F4-912D-3FE0C87296F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74727337-6F56-4A40-B33C-35D256B08F8E}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

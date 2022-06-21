@@ -1,0 +1,85 @@
+﻿body {
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0 0 0 30px;
+    margin-left: 50px;
+    animation: spin 2s linear infinite;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/*ANALISIS MODO RESPONSIVE*/
+
+/*form 980px or less*/
+@media screen and (max-width:980px) {
+    #pagewrap {
+        width:94%;
+    }
+    #content {
+        width: 65%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+}
+
+/*form 700px or less| Resetea contenedor*/
+/*@media screen and (max-width:700px) {
+
+    #content {
+        width: auto;
+        float:none;
+    }
+
+    #sidebar {
+        width: auto;
+        float: none;
+    }
+}*/
+
+/*form 480px or less*/
+/*@media screen and (max-width:480px) {
+
+    #header {
+        height: auto;
+    }
+    h1 {
+        font-size:24px;
+    }
+
+    #sidebar {
+        display:none;
+    }
+}*/
+
+/* MEDIA QUERIES */
+
+/*@media screen and (max-width: 700px) {
+
+    #featured li {
+        width: 46%
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #featured li {
+        width: 92%
+    }
+}*/

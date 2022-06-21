@@ -1,0 +1,6 @@
+C:\Proyectos\Iglesia\VPN.EntidadesNegocio\bin\Release\VPN.EntidadesNegocio.dll
+C:\Proyectos\Iglesia\VPN.EntidadesNegocio\bin\Release\VPN.EntidadesNegocio.pdb
+C:\Proyectos\Iglesia\VPN.EntidadesNegocio\obj\Release\VPN.EntidadesNegocio.csprojAssemblyReference.cache
+C:\Proyectos\Iglesia\VPN.EntidadesNegocio\obj\Release\VPN.EntidadesNegocio.csproj.CoreCompileInputs.cache
+C:\Proyectos\Iglesia\VPN.EntidadesNegocio\obj\Release\VPN.EntidadesNegocio.dll
+C:\Proyectos\Iglesia\VPN.EntidadesNegocio\obj\Release\VPN.EntidadesNegocio.pdb
